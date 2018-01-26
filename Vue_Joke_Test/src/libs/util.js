@@ -1,7 +1,6 @@
 import axios from 'axios'
 
 const Util = {
-    // apiPath: 'https://qlyd.net:8443'
     apiPath: ''
 }
 
