@@ -3,8 +3,6 @@
 /** Mock.js */
 import Mock, { Random } from 'mockjs'
 
-const ServerHeader = 'https://qlyd.net:8443/'
-
 const JokeListData = () => {
     const jokeData = []
     for (let i = 0; i < 20; i++) {
