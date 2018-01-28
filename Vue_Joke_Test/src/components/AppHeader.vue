@@ -13,8 +13,6 @@
 <script>
     import AppIconSrc from '@/assets/Icon.png'
 
-    export const HeaderHeight = 128
-
     export default {
         data () {
             return {
@@ -34,20 +32,14 @@
 </script>
 <style scoped lang="scss">
     #header-view {
-        position: fixed;
-        z-index: 99999;
-        top: 0;
-        left: 0;
-        width: 95%;
-        height: 128px;
+        height: 100%;
         font-size: 40px;
         background: #fff064;
         color: black;
         display: flex;
         flex-direction: row;
         align-items: center;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding: 0 20px;
         justify-content: space-between;
 
         .main {

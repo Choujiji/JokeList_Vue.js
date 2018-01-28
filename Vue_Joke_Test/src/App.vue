@@ -1,7 +1,9 @@
 <template>
   <div>
-    <app-header></app-header>
-    <router-view id="router-view" :style="contentViewStyle"/>
+    <div class="app-header">
+      <app-header></app-header>
+    </div>
+    <router-view id="router-view"/>
   </div>
 </template>
 
@@ -12,16 +14,20 @@ export default {
   name: 'App',
   components: {
     AppHeader
-  },
-  data () {
-    return {
-      contentViewStyle: {
-        marginTop: (HeaderHeight / 2) + 'px'
-      }
-    }
   }
 }
 </script>
 
 <style scoped lang="">
+  .app-header {
+    z-index: 99999;
+    width: 100%;
+    height: 128px;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  #router-view {
+    margin-top: 128px;
+  }
 </style>
